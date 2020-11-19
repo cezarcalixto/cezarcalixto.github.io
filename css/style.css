@@ -1,0 +1,222 @@
+/*ESTILOS GERAIS */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 200px 0 0 0;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.acessibilidade {
+  display: hidden;
+  color: #fff;
+  position: relative;
+  top: -200px;
+  right: -200px;
+  height: 40px;
+  width: 40px;
+  border: solid black 2px;
+}
+.acessibilidade p {
+  display: none;
+}
+.acessibilidade :focus {
+  padding: 20px;
+  visibility: visible;
+  display: block;
+}
+.menu_navegacao {
+  display: inline-flex;
+  width: 100%;
+  margin-left: 420px;
+  gap: 35px;
+  margin-top: 80px;
+  margin-left: -308px;
+  padding-top: 10px;
+  background: #56c28f;
+  border-radius: 20px;
+  height: 40px;
+  position: relative;
+  left: 40px;
+  right: -300px;
+  padding-left: 25px;
+}
+header {
+  height: 247px;
+  margin-top: -210px;
+  right: 190px;
+}
+.logo_header {
+  margin-top: 90px;
+}
+.menu_navegacao li {
+  color: #ffffff;
+}
+.menu_navegacao li a {
+  color: #fff;
+}
+.menu_navegacao ul {
+  position: relative;
+  padding-left: 25px;
+  gap: 40px;
+  position: relative;
+  margin-left: -308px;
+}
+.menu_navegacao ul li {
+  color: #ffffff;
+  text-align: center;
+  width: 460px;
+  position: relative;
+}
+.menu_navegacao li a:focus {
+  color: blue;
+}
+.sacola {
+  display: block;
+  position: relative;
+  top: -90px;
+  right: -890px;
+  z-index: -1;
+}
+.campo_busca {
+  width: 100%;
+  position: relative;
+  bottom: -130px;
+  left: -110px;
+}
+input {
+  width: 940px;
+  position: relative;
+  right: -120px;
+  top: -210px;
+  background: #e6e6e6;
+  border: 1px;
+  border-radius: 5px;
+  height: 35px;
+}
+button {
+  top: -238px;
+  right: -995px;
+  position: relative;
+  background: #56c28f;
+  border: 1px solid #1cb9e4;
+}
+.introducao {
+  background: url(./deficiente\ visual.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 318px;
+  position: relative;
+  top: -80px;
+}
+.introducao h2 {
+  color: #ffffff;
+  position: relative;
+  right: -170px;
+  bottom: -120px;
+}
+.introducao p {
+  color: #ffffff;
+  position: relative;
+  right: -200px;
+  bottom: -120px;
+}
+cite {
+  color: #ffffff;
+  position: relative;
+  right: -200px;
+  bottom: -120px;
+}
+.destaques {
+  height: 666px;
+  background: #56c28f;
+  position: relative;
+  top: -119px;
+}
+.destaques2 {
+  height: 400px;
+  background: #ffffff;
+  position: relative;
+  top: -50px;
+}
+.destaques2 h2 {
+  font-size: 2em;
+  font-weight: bold;
+  font-style: arial;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.destaques h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 2em;
+  font: arial, georgia;
+  color: #ffffff;
+  font-weight: bold;
+}
+.itens_destaques {
+  width: 100%;
+}
+.fundo_categorias {
+  width: 100%;
+  height: 270px;
+  background: #ffffff;
+  position: relative;
+  top: 90px;
+}
+.produtos1 {
+  position: relative;
+  top: -25px;
+  text-align: center;
+}
+.produtos1 img {
+  position: relative;
+  right: -30px;
+}
+.titulo {
+  position: relative;
+  right: -400px;
+  top: -20px;
+}
+.informacoes_importante ul {
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.informacoes_importante ul li {
+  margin-top: 20px;
+  text-align: center;
+}
+.informacoes_importante {
+  position: relative;
+  top: 50px;
+  border-right: solid 2px #fff;
+}
+.rodape {
+  height: 300px;
+  background: #56c28f;
+}
+.informacoes_rodape ul {
+  margin-top: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.social {
+  display: inline-flex;
+}
+.btn {
+  position: relative;
+  left: 595px;
+  top: 150px;
+  z-index: 1;
+}
+.btn a {
+  color: #000;
+}
+.btn a:hover {
+  color: #fff;
+  padding: 10px;
+}
