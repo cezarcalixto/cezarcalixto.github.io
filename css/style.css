@@ -1,222 +1,181 @@
-/*ESTILOS GERAIS */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 200px 0 0 0;
-}
-p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+body, h1, h2, p, ul, li, dt, dd, dl {
+  margin: 0px;
+  padding: 0px;
 }
 img {
   display: block;
   max-width: 100%;
 }
-.acessibilidade {
-  display: hidden;
-  color: #fff;
-  position: relative;
-  top: -200px;
-  right: -200px;
-  height: 40px;
-  width: 40px;
-  border: solid black 2px;
+ul {
+  list-style: none;
 }
-.acessibilidade p {
-  display: none;
+body {
+  background: #faf6ed;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
-.acessibilidade :focus {
-  padding: 20px;
-  visibility: visible;
+.menu {
+  grid-column: 3/5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: #fb5;
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.menu li a{
   display: block;
-}
-.menu_navegacao {
-  display: inline-flex;
-  width: 100%;
-  margin-left: 420px;
-  gap: 35px;
-  margin-top: 80px;
-  margin-left: -308px;
-  padding-top: 10px;
-  background: #56c28f;
-  border-radius: 20px;
-  height: 40px;
-  position: relative;
-  left: 40px;
-  right: -300px;
-  padding-left: 25px;
-}
-header {
-  height: 247px;
-  margin-top: -210px;
-  right: 190px;
-}
-.logo_header {
-  margin-top: 90px;
-}
-.menu_navegacao li {
-  color: #ffffff;
-}
-.menu_navegacao li a {
-  color: #fff;
-}
-.menu_navegacao ul {
-  position: relative;
-  padding-left: 25px;
-  gap: 40px;
-  position: relative;
-  margin-left: -308px;
-}
-.menu_navegacao ul li {
-  color: #ffffff;
-  text-align: center;
-  width: 460px;
-  position: relative;
-}
-.menu_navegacao li a:focus {
-  color: blue;
-}
-.sacola {
-  display: block;
-  position: relative;
-  top: -90px;
-  right: -890px;
-  z-index: -1;
-}
-.campo_busca {
-  width: 100%;
-  position: relative;
-  bottom: -130px;
-  left: -110px;
-}
-input {
-  width: 940px;
-  position: relative;
-  right: -120px;
-  top: -210px;
-  background: #e6e6e6;
-  border: 1px;
-  border-radius: 5px;
-  height: 35px;
-}
-button {
-  top: -238px;
-  right: -995px;
-  position: relative;
-  background: #56c28f;
-  border: 1px solid #1cb9e4;
-}
-.introducao {
-  background: url(./deficiente\ visual.jpg) no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: 318px;
-  position: relative;
-  top: -80px;
-}
-.introducao h2 {
-  color: #ffffff;
-  position: relative;
-  right: -170px;
-  bottom: -120px;
-}
-.introducao p {
-  color: #ffffff;
-  position: relative;
-  right: -200px;
-  bottom: -120px;
-}
-cite {
-  color: #ffffff;
-  position: relative;
-  right: -200px;
-  bottom: -120px;
-}
-.destaques {
-  height: 666px;
-  background: #56c28f;
-  position: relative;
-  top: -119px;
-}
-.destaques2 {
-  height: 400px;
-  background: #ffffff;
-  position: relative;
-  top: -50px;
-}
-.destaques2 h2 {
-  font-size: 2em;
+  padding: 10px;
+  margin-right: 10px;
+  color: #222;
+  text-decoration: none;
+  font-family: monospace;
   font-weight: bold;
-  font-style: arial;
-  margin-bottom: 10px;
-  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: .1em;
 }
-.destaques h2 {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 2em;
-  font: arial, georgia;
-  color: #ffffff;
-  font-weight: bold;
-}
-.itens_destaques {
+.grid-section {
+  grid-column: 2/4;
   width: 100%;
-}
-.fundo_categorias {
-  width: 100%;
-  height: 270px;
-  background: #ffffff;
-  position: relative;
-  top: 90px;
-}
-.produtos1 {
-  position: relative;
-  top: -25px;
-  text-align: center;
-}
-.produtos1 img {
-  position: relative;
-  right: -30px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  grid-gap: 20px;
+  margin-bottom: 4rem;
 }
 .titulo {
-  position: relative;
-  right: -400px;
-  top: -20px;
+  font-family: "Playfair Display SC", georgia;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  grid-column: 1 / 4;
 }
-.informacoes_importante ul {
-  padding: 10px;
-  margin-bottom: 50px;
+.animais h2 {
+  font-family: 'IBM plex Mono', monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 1rem;
+  color: #e54;
 }
-.informacoes_importante ul li {
-  margin-top: 20px;
-  text-align: center;
+.animais h2::before {
+  content: '' ;
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  margin-right: 10px;
+  background: #fb5;
 }
-.informacoes_importante {
-  position: relative;
-  top: 50px;
-  border-right: solid 2px #fff;
+.animais p {
+  font-family: Helvetica, Arial ;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
-.rodape {
-  height: 300px;
-  background: #56c28f;
+.animais-lista {
+  height: 370px;
+  overflow-y: scroll;
+  grid-column: 2;
 }
-.informacoes_rodape ul {
-  margin-top: 40px;
-  color: #ffffff;
+.animais-lista::-webkit-scrollbar {
+  width: 18px
+}
+.animais-lista::-webkit-scrollbar-thumb {
+  background: #fb5;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+
+}
+.animais-lista::-webkit-scrollbar-track {
+  background: #faf6ed;
+}
+.animais-descricao {
+  grid-column: 3;
+}
+.animais-descricao {
+  margin-bottom: 3rem;
+}
+.faq-lista {
+  grid-column: 2/4
+}
+.faq-lista dt {
+  font-family: 'IBM Plex Mono';
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color: #e54;
+}
+.faq-lista dt::before {
+  content: '' ;
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #fb5;
+}
+.faq-lista dd {
+  font-family: Helvetica, Arial;
+  margin-bottom: .5rem;
+  margin-left: 30px;
+}
+.mapa {
+  grid-column: 2;
+}
+.dados {
+  grid-column: 3;
+}
+.dados li {
+  margin-bottom: 1rem;
+  font-family: helvetica, Arial;
+}
+.dados li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #e54;
+}
+.copy {
+  grid-column: 3/5;
+  margin-bottom: 2rem;
+  background: #fb5;
+}
+.copy p {
+  padding: 20px;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
 }
-.social {
-  display: inline-flex;
-}
-.btn {
-  position: relative;
-  left: 595px;
-  top: 150px;
-  z-index: 1;
-}
-.btn a {
-  color: #000;
-}
-.btn a:hover {
-  color: #fff;
-  padding: 10px;
-}
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .menu, .grid-section, .copy {
+    grid-column: 1;
+  }
+  .grid-section {
+    grid-template-columns: 1fr 100px;
+    grid-gap: 10px;
+  }
+  .animais-lista {
+    grid-column: 1 / 3;
+  }
+  .faq-lista, .dados, .mapa {
+grid-column: 1 / 3;
+ }
+ .grid-section h1{
+   font-size: 3rem;
+ }
+ .menu {
+   margin-top: 0px;
+ }
+   .copy {
+     margin-bottom: 0px;
+   }
+ }
