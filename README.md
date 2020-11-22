@@ -1,2 +1,2 @@
 # http://cezarcalixto.github.io
-Site Para Pessoas Com Baixa Visão
+Site feito como objeto de estudo pelo curso Origamid do professor André Rafale. Trabalho feito por mim com HTML CSS e JAVASCRIPT.
