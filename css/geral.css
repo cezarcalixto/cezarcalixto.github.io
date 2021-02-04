@@ -270,4 +270,30 @@ body, h1, h2, p, ul, li, dt, dd, dl {
    .data-anima-scrool {
      background: blue;
    }
-  
+   [data-semana].aberto::after{
+     display: inline-block;
+     content: '';
+     width: 8px;
+     height: 8px;
+     background: #3f4;
+     border-radius: 50%;
+     margin-left: 4px;
+     border: 2px solid black;
+   }
+   [data-semana]::after{
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 8px;
+     background: #e54;
+     border-radius: 50%;
+     margin-left: 4px;
+     border: 2px solid black;
+   }
+  .btc-preco{
+    background: #3f4;
+    padding: .2rem .5rem;
+    font-weight: bold;
+    border-radius: 3px;
+    
+  }

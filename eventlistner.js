@@ -6,7 +6,11 @@ import initModal from './modal.js';
 import initTooltip from './tooltip.js';
 import dropdown from './dropdown.js';
 import openMenu from './menu-mobile.js';
-import animaNumero from './anima-numero.js'
+import botaoNovo from './botaoNono.js'
+import date from './date-object.js';
+import initfetchAnimais from './fetch-animais.js';
+import initfetchBitcoin from './fetchBitcoin.js'
+
 
 initAccordionList();
 initScroolSuave();
@@ -16,4 +20,7 @@ initModal();
 initTooltip();
 dropdown();
 openMenu();
-animaNumero();
+botaoNovo();
+date();
+initfetchAnimais();
+initfetchBitcoin();
