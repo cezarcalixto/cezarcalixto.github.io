@@ -2,8 +2,9 @@
   "name": "animais-fantasticos",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch"
+    "build": "npx webpack --mode production",
+    "dev": "npx webpack --mode development --watch",
+    "compile": "webpack --config webpack.config.js"
   },
   "license": "ISC",
   "devDependencies": {
@@ -13,7 +14,7 @@
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "webpack": "^4.17.2",
+    "webpack": "^4.46.0",
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
