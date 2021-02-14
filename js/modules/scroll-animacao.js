@@ -1,3 +1,4 @@
+import debounce from './debounce.js'
 export default function initAnimacaoScroll() {
   const sections = document.querySelectorAll('[data-anime="scroll"]');
   const windowMetade = window.innerHeight * 0.6;
