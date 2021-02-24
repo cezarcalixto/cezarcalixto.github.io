@@ -263,6 +263,7 @@ body {
 
 [data-anime="accordion"] dt.ativo::after {
   content: '⬏';
+  transition: transform .3s;
 }
 
 [data-anime="accordion"] dd.ativo {
@@ -312,4 +313,11 @@ body {
   padding: .2rem .5rem;
   font-weight: bold;
   border-radius: 2px;  
+}
+.arrow-black {
+  background: url(../img/arrow.svg) no-repeat center center;
+  color: #000;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
 }
